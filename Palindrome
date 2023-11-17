@@ -1,1 +1,13 @@
-Finds out if a word is a palindrome or not
+def Palindrome(word):
+    new_word = ""
+    for char in word:
+        new_word = char + new_word
+    if new_word.lower() == word.lower():
+        print("YES")
+    else:
+        print("NO")
+
+Palindrome("mom")
+Palindrome("CAT")
+Palindrome("kayak")
+Palindrome("Dad")
